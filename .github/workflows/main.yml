@@ -10,7 +10,7 @@ on:
 
 jobs:
   inputs-demo:
-  runs-on: ubuntu-latest
-  steps:
-    - name: deploy app
-      run: echo "deploying application to ${{ inputs.environment }}"
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy app
+        run: echo "deploying application to ${{ inputs.environment }}"
