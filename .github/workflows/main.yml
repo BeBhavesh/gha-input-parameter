@@ -1,3 +1,4 @@
+
 name: input parameters
 on:
   workflow_dispatch:
@@ -6,8 +7,6 @@ on:
         description: where to deploy
         required: true
         default: dev
-
-
 jobs:
   inputs-demo:
     runs-on: ubuntu-latest
