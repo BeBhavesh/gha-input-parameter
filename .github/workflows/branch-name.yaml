@@ -1,13 +1,15 @@
 name: checking branch through context variables
-on: 
+
+on:
   workflow_dispatch:
 
 jobs:
-  name: branch checking
+  branch-check:
+    name: branch checking
     runs-on: ubuntu-latest
+
     steps:
       - name: print refs
         run: |
-          echo "full info using ${{  github.ref      }}"
-          echo "pnly branch or tag using ${{ github.ref_name}}"    
-  
+          echo "Full ref info: ${{ github.ref }}"
+          echo "Only branch or tag: ${{ github.ref_name }}"
