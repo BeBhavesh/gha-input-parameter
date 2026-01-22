@@ -1,5 +1,7 @@
 name: checking branch through context variables
-on: push
+on: 
+  workflow_dispatch:
+
 jobs:
   name: branch checking
     runs-on: ubuntu-latest
