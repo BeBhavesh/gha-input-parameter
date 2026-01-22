@@ -1,0 +1,11 @@
+name: checking branch through context variables
+on: push
+jobs:
+  name: branch checking
+    runs-on: ubuntu-latest
+    steps:
+      - name: print refs
+        run: |
+          echo "full info using ${{  github.ref      }}"
+          echo "pnly branch or tag using ${{ github.ref_name}}"    
+  
